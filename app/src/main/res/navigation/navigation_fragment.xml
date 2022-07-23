@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz_screen"
+    app:startDestination="@id/introScreen">
+
+    <fragment
+        android:id="@+id/introScreen"
+        android:name="com.example.baseproject.BlankFragment"
+        android:label="Intro Screen"
+        tools:layout="@layout/fragment_intro_screen">
+        <action
+            android:id="@+id/action_blankFragment_to_quizScreen"
+            app:destination="@id/quizScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizScreen"
+        android:name="com.example.baseproject.QuizScreen"
+        android:label="Quiz Screen"
+        tools:layout="@layout/fragment_quiz_screen">
+        <action
+            android:id="@+id/action_quizScreen_to_congratScreen"
+            app:destination="@id/congratScreen" />
+        <action
+            android:id="@+id/action_quizScreen_to_failScreen"
+            app:destination="@id/failScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/congratScreen"
+        android:name="com.example.baseproject.CongratScreen"
+        android:label="Congratulation"
+        tools:layout="@layout/fragment_congrat_screen" >
+        <argument
+            android:name="safeArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/failScreen"
+        android:name="com.example.baseproject.FailScreen"
+        android:label="Fail"
+        tools:layout="@layout/fragment_fail_screen" />
+
+    <fragment
+        android:id="@+id/onBoardingScreen"
+        android:name="com.example.baseproject.OnBoardingScreen"
+        android:label="fragment_on_boarding_screen"
+        tools:layout="@layout/fragment_on_boarding_screen" >
+        <action
+            android:id="@+id/action_onBoardingScreen_to_introScreen"
+            app:destination="@id/introScreen" />
+    </fragment>
+</navigation>

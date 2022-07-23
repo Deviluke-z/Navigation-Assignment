@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    tools:context=".QuizScreen">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sample_margin"
+        android:text="@string/tv_app_name"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivQuestionDescription"
+        android:layout_width="@dimen/sample_image_size"
+        android:layout_height="@dimen/sample_image_size"
+        android:layout_gravity="center"
+        android:src="@drawable/question_image" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sample_margin"
+        android:layout_marginEnd="@dimen/sample_margin"
+        android:text="@string/tv_question"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sample_margin"
+        android:layout_marginEnd="@dimen/sample_margin">
+
+        <RadioButton
+            android:id="@+id/rbAnswer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_answer_1" />
+
+        <RadioButton
+            android:id="@+id/rbAnswer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_answer_2" />
+
+        <RadioButton
+            android:id="@+id/rbAnswer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_answer_3" />
+
+        <RadioButton
+            android:id="@+id/rbAnswer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_answer_4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btn_submit" />
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+    <string name="tv_app_name">Quiz Game</string>
+    <string name="tv_boarding">On Boarding Screen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tv_question">Hãy cho biết, bài hát nào vừa được ca sĩ Tuấn Cùi phát hành vào ngày 19/7/2022</string>
+    <string name="tv_answer_1">Sóng gió</string>
+    <string name="tv_answer_2">LAYLALAY</string>
+    <string name="tv_answer_3">Ngôi sao cô đơn</string>
+    <string name="tv_answer_4">Là 1 thằng con trai</string>
+    <string name="btn_submit">Submit</string>
+    <string name="tv_congratulation">Chúc mừng bạn đã trả lời đúng</string>
+    <string name="tv_fail">Mình biết bạn đã cố gắng, nhưng như thế là chưa đủ</string>
+    <string name="btn_retest">Retest</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_start">Start</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_op_boarding">Logout</string>
+</resources>
